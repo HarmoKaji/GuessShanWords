@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F5F7FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="20dp">
+
+        <!-- 🔷 HEADER -->
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_color"
+            android:orientation="vertical"
+            android:padding="22dp"
+            android:elevation="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="✨Shan Guess Word✨       "
+                    android:textColor="#FFFFFF"
+                    android:id="@+id/shan"
+                    android:textSize="22dp"
+                    android:textStyle="bold"
+                    android:layout_centerInParent="true"/>
+
+                <ImageButton
+                    android:id="@+id/btnRefresh"
+                    android:layout_width="45dp"
+                    android:layout_height="42dp"
+                    android:layout_alignEnd="@id/shan"
+                    android:layout_alignParentEnd="true"
+                    android:background="@android:color/transparent"
+                    android:src="@android:drawable/ic_popup_sync"
+                    app:tint="#FFFFFF"
+                    android:contentDescription="Refresh"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rearrange these syllables"
+                android:textColor="#E8F5E9"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:id="@+id/txtQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:text=""
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginTop="16dp"
+                android:lineSpacingExtra="8dp"
+                android:maxLines="3"/>
+        </LinearLayout>
+
+        <!-- 🟨 ANSWER AREA -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Answer"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#374151"
+            android:layout_marginTop="24dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:id="@+id/answerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="110dp"
+            android:background="@drawable/round_box"
+            android:padding="18dp"
+            android:layout_marginTop="10dp"
+            android:elevation="6dp"
+            app:flexWrap="wrap"
+            app:justifyContent="center"
+            app:alignItems="center"/>
+
+        <!-- 🟩 WORD OPTIONS -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose Syllables"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#374151"
+            android:layout_marginTop="24dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:id="@+id/gridWords"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_round_green"
+            android:padding="14dp"
+            android:elevation="6dp"
+            app:flexWrap="wrap"
+            app:justifyContent="center"
+            app:alignItems="center"/>
+
+
+        <Button
+            android:id="@+id/btnCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:layout_marginTop="28dp"
+            android:text="Check Answer"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:background="@drawable/bg_color_check"
+            android:stateListAnimator="@null"
+            android:elevation="0dp"/>
+
+        <!-- 📢 RESULT -->
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="22dp"
+            android:paddingLeft="22dp"
+            android:paddingRight="22dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:text=""
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:visibility="gone"/>
+    </LinearLayout>
+</ScrollView>
