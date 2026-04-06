@@ -63,7 +63,7 @@
                 android:id="@+id/txtQuestion"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
-                android:text=""
+                android:text="-"
                 android:textColor="#FFFFFF"
                 android:textSize="22sp"
                 android:textStyle="bold"

@@ -264,7 +264,7 @@ public class MainActivity extends AppCompatActivity {
 
             new Handler().postDelayed(this::loadRandomQuestion, 1000);
         } else {
-            tvResult.setText("☹️ ဢမ်ႇပႆႇမႅၼ်ႈၶႃႈ!");
+            tvResult.setText("☹️ ဢမ်ႇပႆႇမႅၼ်ႈၶႃႈၼေႃ!");
             tvResult.setTextColor(Color.WHITE);
             tvResult.setBackgroundResource(R.drawable.result_wrong);
            new Handler().postDelayed(this::loadRandomQuestion, 1000);
