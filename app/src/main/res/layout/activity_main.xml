@@ -127,7 +127,7 @@
             android:layout_height="56dp"
             android:layout_marginTop="28dp"
             android:text="Check Answer"
-            android:textColor="#FFFFFF"
+            android:textColor="#000000"
             android:textStyle="bold"
             android:textSize="18sp"
             android:background="@drawable/bg_color_check"
